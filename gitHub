@@ -23,3 +23,5 @@ Branch
   git checkout -b [nome da nova Branch] master
   --add/commit
   git push origin [nome da nova Branch]
+Update a local storage
+  git pull
