@@ -10,3 +10,9 @@
 …or push an existing repository from the command line
   git remote add origin https://github.com/EduardoFreit/ds.git
   git push -u origin master
+
+Branch
+  git remote add upstream [url do repositório Raiz]
+  git checkout -b [nome da nova Branch] master
+  --commit
+  git push origin [nome da nova Branch]-fixes
