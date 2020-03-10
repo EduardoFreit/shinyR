@@ -10,9 +10,16 @@
 …or push an existing repository from the command line
   git remote add origin https://github.com/EduardoFreit/ds.git
   git push -u origin master
+  
+Branch local
+  git branch <feature_branch>
+  git checkout <feature_branch>
+  --add/commit
+  git push origin <feature_branch>
 
 Branch
+  primeiro faz o fork       
   git remote add upstream [url do repositório Raiz]
   git checkout -b [nome da nova Branch] master
-  --commit
-  git push origin [nome da nova Branch]-fixes
+  --add/commit
+  git push origin [nome da nova Branch]
