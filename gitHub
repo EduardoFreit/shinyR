@@ -25,3 +25,20 @@ Branch
   git push origin [nome da nova Branch]
 Update a local storage
   git pull
+Desfazer git add
+  git reset [arquivo-add]
+Desfazer git commit
+  git reset ~HEAD1
+    or
+  git reset --hard [hash commit]
+   ou refazer um commit especifico
+  git revert [hash commit]
+Desfazer um push -- Não recomendável
+  git reset --mixed hash-do-penultimo-commit 
+  git stash
+  git revert hash-do-ultimo-commit
+  git stash apply
+  Depois, Forçar um push
+    git push -f
+nao alterar uma mensagem em um commit
+  git commit --amend --no-edit -a
