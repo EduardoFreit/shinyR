@@ -37,7 +37,6 @@ Desfazer git commit
    ou refazer um commit especifico
   git revert [hash commit]
   
-Desfazer um push -- Não 
 Desfazer um push
   git reset --mixed hash-do-penultimo-commit 
   git stash
@@ -70,5 +69,3 @@ Deletar uma pasta do repositorio e do arquivo local
   git rm -r foldername
 Deletar uma pasta do repositorio mas nao do arquivo local
   git rm --cached -r <foldername>
-
-  
