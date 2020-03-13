@@ -23,29 +23,49 @@ Branch
   git checkout -b [nome da nova Branch] master
   --add/commit
   git push origin [nome da nova Branch]
+  
 Update a local storage
   git pull
+  
 Desfazer git add
   git reset [arquivo-add]
+  
 Desfazer git commit
   git reset ~HEAD1
     or
   git reset --hard [hash commit]
    ou refazer um commit especifico
   git revert [hash commit]
-<<<<<<< HEAD
-Desfazer um push -- Não recomendável
-=======
+  
 Desfazer um push
->>>>>>> f411dcedec4c52ff8b190652b6a93b3c0eacf25d
   git reset --mixed hash-do-penultimo-commit 
   git stash
   git revert hash-do-ultimo-commit
   git stash apply
   Depois, Forçar um push
     git push -f
-<<<<<<< HEAD
+    
 nao alterar uma mensagem em um commit
   git commit --amend --no-edit -a
-=======
->>>>>>> f411dcedec4c52ff8b190652b6a93b3c0eacf25d
+  
+Update a Local Fork at the Terminal
+  git remote -v
+  git remote add upstream [url do repositório raiz "garfado"]
+  git remote -v
+  git fetch upstream
+  git checkout master
+  git merge upstream/master
+  
+Deletar um arquivo do repositorio e do arquivo local
+  git rm file1.txt
+  git commit -m "remove file1.txt"
+Deletar um arquivo do repositorio mas nao do arquivo local
+  git rm --cached file1.txt
+  git commit -m "remove file1.txt"
+  And to push changes to remote repo
+    git push -u origin branch_name  
+    
+Deletar uma pasta do repositorio e do arquivo local
+  git rm -r foldername
+Deletar uma pasta do repositorio mas nao do arquivo local
+  git rm --cached -r <foldername>
